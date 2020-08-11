@@ -165,7 +165,7 @@ body {
 
 .header__wrapper {
     height: auto;
-  
+    
 	background-position: center center;
 	background-repeat: no-repeat;
     background-size: cover;
@@ -424,7 +424,7 @@ body {
     position: relative;
     text-align: center;
     max-width: 100%;
-    margin-top: 62px;
+    margin-top: 90px;
 }
 .auto__inner{
     position: relative;
@@ -462,6 +462,26 @@ color: #000000;
 margin-top: 28px;
 margin-bottom: 68px;
 }
+.auto__inner-footer__roller{
+    position: relative;
+}
+.auto__inner-footer__roller span{
+    position: absolute;
+    width: 20px;
+    height: 15px;
+	border-top: 1px solid #6D6D6D;
+	border-left: 1px solid #6D6D6D;
+    top: 55px;
+    left: 100px;
+	transform: rotate(38deg);
+	z-index: 10;
+	background-color: #ffffff;
+	transition: 1s;
+}
+
+.auto__inner:hover .auto__inner-footer__roller span{
+display: none;
+} 
 
 .auto__inner-item,
 .auto__inner-slider-item {

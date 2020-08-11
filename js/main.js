@@ -159,3 +159,13 @@ $(function () {
     // console.log(data);
   });
 });
+(function(){
+  var rol = document.querySelector('.rol');
+  var innerItem = document.querySelectorAll('.auto__inner-item');
+  innerItem.forEach((item) =>{
+    item.addEventListener('mouseover', () =>{
+        rol.style.left = (item.getBoundingClientRect().left - 150) +'px';
+    })
+  })
+
+})();
