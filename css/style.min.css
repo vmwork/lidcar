@@ -249,7 +249,34 @@ body {
 	border-radius: 5px;
 	padding: 2px 10px
 }
-
+.header__inner-title p{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.header__inner-title div{
+  display: inline;
+}
+@media (max-width: 426px){
+    .header__inner-title span {
+        background-color: transparent;
+        padding: 0;
+      
+    }
+    .header__inner-title p {
+        max-width: 279px;
+        background-color: #fff;
+        color: #fe323d;
+        border-radius: 5px;
+        padding: 2px 10px;
+        display: block;
+    }  
+    .header__inner-title div{
+        max-width: 250px;
+        display: block;
+        text-align: center;
+    }
+}
 .header__inner-text {
 	margin-bottom: 70px
 }
