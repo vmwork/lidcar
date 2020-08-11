@@ -49,7 +49,7 @@ $(function () {
   $range.ionRangeSlider({
     min: min,
     max: max,
-    from: 4,
+    from: 2,
     onStart: function (data) {
       $input.prop("value", data.from);
     },
@@ -171,28 +171,68 @@ $(function () {
 
 })();
 (function(){
-  var autoCalculator = document.querySelector('#calculator');
-  var autoCalculatorForm = document.querySelectorAll('.advantages__inner-form .input__line option');
   var selectedAuto = document.querySelector('#select')
   var autoCalculatorView = document.querySelector('.advantages__inner-view img');
-  console.log(autoCalculatorView)
-  console.log(selectedAuto.value)
+  var firstpay = document.querySelector('.first-pay')
+  var montsPay = document.querySelector('.monsts-pay')
+  var summ = document.querySelector('.summ')
+  var creditTerm = 2;
+ 
+
+
+
+  document.addEventListener('click', () => {
+    var jsInputTime = document.querySelector('.irs-single');
+    creditTerm = jsInputTime.textContent;
+    // console.log(creditTerm)
+    return creditTerm
+  }
+    )
+
+  
+function calculate(summ){
+  firstpay.textContent = summ.replace(/[^\d;]/g, '') * 6.5 / 100 + " сум"
+  montsPay.textContent = (summ.replace(/[^\d;]/g, '') - 
+  summ.replace(/[^\d;]/g, '') * 6.5 / 100) / creditTerm  + " сум"
+}
+calculate('100000 сум')
+
   selectedAuto.addEventListener('change', () => {
-    console.log(selectedAuto.value)
-    if(selectedAuto.value == 1){
+       if(selectedAuto.value == 1){
+
+        summ.textContent = '100000 сум'
+        calculate(summ.textContent)
+
      setOpacity(autoCalculatorView)  
       autoCalculatorView.src = './images/malibu.jpg'
     } else if(selectedAuto.value == 2){
-                 
+
+      
+      summ.textContent = '50000 сум'
+      calculate(summ.textContent)
+
+
       autoCalculatorView.src = './images/lacetti.jpg'
       setOpacity(autoCalculatorView)
+
+
     } else if(selectedAuto.value == 3){
+
+      summ.textContent = '80000 сум'
+      calculate(summ.textContent)
       autoCalculatorView.src = './images/nexia.jpg'
       setOpacity(autoCalculatorView)
     } else if(selectedAuto.value == 4){
+
+      summ.textContent = '70000 сум'
+      calculate(summ.textContent)
+
       autoCalculatorView.src = './images/Cobalt.jpg'
       setOpacity(autoCalculatorView)
     } else if(selectedAuto.value == 5){
+      summ.textContent = '35000 сум'
+      calculate(summ.textContent)
+
       autoCalculatorView.src = './images/spark.jpg'
       setOpacity(autoCalculatorView)
     }
@@ -207,6 +247,7 @@ $(function () {
         op += 0.1;
     }
 }
+
 
 
   
