@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      <header id="header" class="header">
+        <div class="header__wrapper" style="background-image: url(./images/header-bg.jpg);">
+          <div class="header__top">
+            <div class="header__top-inner">
+              <a class="logo" href="#">
+                <img src="images/logo.png" />
+              </a>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li><a href="#aboutus">О нас</a></li>
+                  <li><a href="#whywe">Почему мы</a></li>
+                  <li><a href="#calculator">Рассчитайте кредит</a></li>
+                  <li><a href="#hiw">Как это работает</a></li>
+                  <li><a href="#answers">Вопрос-ответ</a></li>
+                </ul>
+              </nav>
+              <a class="header__phone" href="tel:998991072080">+998(99)
+                107-20-80<img src="./images/icon-phone.png" alt="Телефон"></a>
+              <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80"
+                onclick="this.classList.toggle('active')">
+                <path class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+              </svg>
+            </div>
+          </div>
+          <div class="container">
+            <div id="aboutus" class="header__inner">
+              <div class="header__inner-title"><span>Оформление машин в кредит</span>
+                не выходя из дома за 60 минут</div>
+              <div class="header__inner-text">Онлайн лизинг автомобилей в Ташкенте
+              </div>
+              <a class="header__inner-button" href="#calculator">Рассчитать кредит</a>
+              <div class="header__inner-box">
+                <div class="header__inner-box__item clock">Рассмотрение заявки
+                  от 30 до 60 минут</div>
+                <div class="header__inner-box__item coins">Первоначальный
+                  взнос 15-20%</div>
+                <div class="header__inner-box__item calendar">Срок кредитования
+                  от 3 до 5 лет</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="call">
+        <div class="container">
+          <div class="call__inner">
+            <div class="call__inner-text">Получить <span>актуальную</span> и точную цену за машину</div>
+            <a href="#form" class="call__inner-button">Заказать звонок</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="hiw" class="auto">
+        <div class="container">
+          <div class="auto__title title">
+            <span>Как работает лизинг</span> автомобилей
+          </div>
+          <div class="auto__inner">
+            <div class="auto__inner-item">
+              <img src="./images/request.png" alt="">
+              <div class="auto__inner-item__text">
+                Вы оставляете заявку
+              </div>
+              <div class="auto__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="auto__triangle"></div>
+              </div>
+            </div>
+            <div class="auto__inner-item">
+              <img src="./images/manager.png" alt="">
+              <div class="auto__inner-item__text">
+                Наш менеджер готовит предложение
+              </div>
+              <div class="auto__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="auto__triangle"></div>
+              </div>
+            </div>
+            <div class="auto__inner-item">
+              <img src="./images/document.png" alt="">
+              <div class="auto__inner-item__text">
+                Вы заключаете договор
+              </div>
+              <div class="auto__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="auto__triangle"></div>
+              </div>
+            </div>
+            <div class="auto__inner-item">
+              <img src="./images/wallet.png" alt="">
+              <div class="auto__inner-item__text">
+                LID CAR выкупает автомобиль
+              </div>
+              <div class="auto__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="auto__triangle"></div>
+              </div>
+            </div>
+            <div class="auto__inner-item">
+              <img src="./images/auto.png" alt="">
+              <div class="auto__inner-item__text">
+                Вы пользуетесь автомобилем
+              </div>
+              <div class="auto__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="auto__triangle"></div>
+              </div>
+            </div>
+            <div class="auto__inner-item">
+              <img src="./images/auto.png" alt="">
+              <div class="auto__inner-item__text">
+                Вы вносите выкупной платеж
+              </div>
+              <div class="auto__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="auto__triangle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="auto__inner-slider">
+            <div class="auto__inner-slider-item">
+              <img src="./images/request.png" alt="">
+              <div class="auto__inner-slider-item__text">
+                Вы оставляете заявку
+              </div>
+            </div>
+            <div class="auto__inner-slider-item">
+              <img src="./images/manager.png" alt="">
+              <div class="auto__inner-slider-item__text">
+                Наш менеджер готовит предложение
+              </div>
+            </div>
+            <div class="auto__inner-slider-item">
+              <img src="./images/document.png" alt="">
+              <div class="auto__inner-slider-item__text">
+                Вы заключаете договор
+              </div>
+            </div>
+            <div class="auto__inner-slider-item">
+              <img src="./images/wallet.png" alt="">
+              <div class="auto__inner-slider-item__text">
+                LID CAR выкупает автомобиль
+              </div>
+            </div>
+            <div class="auto__inner-slider-item">
+              <img src="./images/auto.png" alt="">
+              <div class="auto__inner-slider-item__text">
+                Вы пользуетесь автомобилем
+              </div>
+            </div>
+            <div class="auto__inner-slider-item">
+              <img src="./images/auto.png" alt="">
+              <div class="auto__inner-slider-item__text">
+                Вы вносите выкупной платеж
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="calculator" class="advantages">
+        <div class="container">
+          <div class="advantages__title title">
+            <span>Рассчитать</span> кредит
+          </div>
+          <div class="advantages__inner">
+            <div class="advantages__inner-form">
+              <div class="input__line">
+                <label>Машина</label>
+                <select id="select">
+                  <option value="1">Malibu 2</option>
+                </select>
+              </div>
+              <div class="input__line" style="margin-bottom: -30px;">
+                <label>Срок кредита</label>
+                <input type="text" class="js-input" value="0">
+                <input type="text" class="js-range" name="my_range" value="" />
+              </div>
+              <div class="input__line">
+                <label>Имя</label>
+                <input type="text" placeholder="Иван">
+              </div>
+              <div class="input__line">
+                <label>Фамилия</label>
+                <input type="text" placeholder="Иванов">
+              </div>
+              <div class="input__line">
+                <label>Телефон</label>
+                <input type="phone" placeholder="+998(99)107-20-80">
+              </div>
+            </div>
+            <div class="advantages__inner-view">
+              <img src="./images/automobile.jpg" alt="">
+              <div class="advantages__box">
+                <div class="advantages__box-item">
+                  <div class="advantages__box-item__title">Первоначальный взнос</div>
+                  <div class="advantages__box-item__price">43 085 сум</div>
+                </div>
+                <div class="advantages__box-item">
+                  <div class="advantages__box-item__title">Ежемесячный взнос</div>
+                  <div class="advantages__box-item__price">24 128 сум</div>
+                </div>
+                <div class="advantages__box-item">
+                  <div class="advantages__box-item__title">Общая сумма</div>
+                  <div class="advantages__box-item__price">1000 сум</div>
+                </div>
+              </div>
+              <a href="#form" class="advantages__button">Заказать звонок
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="whywe" class="edge">
+        <div class="container">
+          <div class="edge__title title">
+            Преимущество
+          </div>
+          <div class="edge__inner">
+            <div class="edge__inner-item">
+              <img src="./images/request.png" alt="">
+              <div class="edge__inner-item__text">
+                Первоначальный взнос
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+            <div class="edge__inner-item">
+              <img src="./images/manager.png" alt="">
+              <div class="edge__inner-item__text">
+                Срок лизинга от 3 лет
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+            <div class="edge__inner-item">
+              <img src="./images/document.png" alt="">
+              <div class="edge__inner-item__text">
+                Быстрый сбор и оформление
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+            <div class="edge__inner-item">
+              <img src="./images/document.png" alt="">
+              <div class="edge__inner-item__text">
+                Минимальная переплата
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="edge__inner-slider">
+            <div class="edge__inner-slider-item">
+              <img src="./images/request.png" alt="">
+              <div class="edge__inner-slider-item__text">
+                Первоначальный взнос
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+            <div class="edge__inner-slider-item">
+              <img src="./images/manager.png" alt="">
+              <div class="edge__inner-slider-item__text">
+                Срок лизинга от 3 лет
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+            <div class="edge__inner-slider-item">
+              <img src="./images/document.png" alt="">
+              <div class="edge__inner-slider-item__text">
+                Быстрый сбор и оформление
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+            <div class="edge__inner-slider-item">
+              <img src="./images/document.png" alt="">
+              <div class="edge__inner-slider-item__text">
+                Минимальная переплата
+              </div>
+              <div class="edge__answers">
+                Процентная ставка и одобрение кредита не зависят от размера первоначального взноса.
+                <div class="edge__triangle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form__wrapper">
+        <div class="container">
+          <div id="form" class="form">
+            <div class="form__inner">
+              <div class="form__inner-box">
+                <div class="form__inner-box__title">
+                  <span>Мы вам поможем!</span> Оставьте заявку и наши специалисты позвонят вам и ответят на все ваши
+                  вопросы
+                </div>
+                <form id="form-contact">
+                  <input name="name" type="text" required placeholder="Имя и Фамилия">
+                  <input name="phone" type="phone" required placeholder="Телефон">
+                  <div id="formContactError"></div>
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+              <div class="form__inner-img">
+                <img src="images/form-bg.png" alt="">
+                <img class="form__inner-img__person" src="images/form-person.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="answers" class="answers"
+        style="background-image: url(images/answers-bg.jpg); border-radius: 50px 50px 0px 0px;">
+        <div class="container">
+          <div class="answers__title title">
+            <span>Вопросы</span> и ответы
+          </div>
+          <div class="answers__inner">
+            <div class="acc">
+              <div class="acc__card">
+                <div class="acc__title">Способы погашения</div>
+                <div class="acc__panel">
+                  <ol>
+                    <li>1) Паспорт гражданина РФ;</li>
+                    <li>2) Фото лица заемщика;</li>
+                    <li>3) Один из документов, подтверждающих доход*:</li>
+                  </ol>
+                  <ul>
+                    <li>справка о доходах и суммах налога физического лица (2-НДФЛ);</li>
+                    <li>справка по форме Банка;</li>
+                    <li>налоговая декларация (3-НДФЛ);</li>
+                    <li>справка из Пенсионного фонда Российской Федерации/МФЦ о размере назначенной/выплаченной за
+                      последний месяц пенсии;
+                    </li>
+                    <li>справка о пожизненном содержании судей (для судей);</li>
+                    <li>справка из органов исполнительной власти (МВД, МЧС и др.)/прокуратуры/следственного комитета о
+                      размере фактически выплаченной и/или назначенной пенсии к выплате;
+                    </li>
+                    <li>справка из НПФ.</li>
+                  </ul>
+                  <div class="answers__line"></div>
+                  <div class="answers__underline-text">
+                    * Документ должен содержать сведения о доходе за последние 12 месяцев или при стаже на текущем
+                    месте работы менее 12 месяцев - за фактический период работы, но не менее, чем за 3 месяца
+                    (Документ действителен 30 календарных дней с даты его оформления).
+                  </div>
+                </div>
+              </div>
+              <div class="acc__card">
+                <div class="acc__title">Часто задаваемые вопросы</div>
+                <div class="acc__panel">
+                  I am the content found under accordion #2.
+                  You can't see me while "active" is not present.
+                </div>
+              </div>
+              <div class="acc__card">
+                <div class="acc__title">Необходимые документы</div>
+                <div class="acc__panel">
+                  I am the content found under accordion #3.
+                  You can't see me while "active" is not present.
+                </div>
+              </div>
+              <div class="acc__card">
+                <div class="acc__title">Требования к автомобилю</div>
+                <div class="acc__panel">
+                  I am the content found under accordion #4.
+                  You can't see me while "active" is not present.
+                </div>
+              </div>
+              <div class="acc__card">
+                <div class="acc__title">Условия лизинга</div>
+                <div class="acc__panel">
+                  I am the content found under accordion #5.
+                  You can't see me while "active" is not present.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="logo" href="#">
+            <img src="images/logo.png" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li><a href="#aboutus">О нас</a></li>
+              <li><a href="#whywe">Почему мы</a></li>
+              <li><a href="#calculator">Рассчитайте кредит</a></li>
+              <li><a href="#hiw">Как это работает</a></li>
+              <li><a href="#answers">Вопрос-ответ</a></li>
+            </ul>
+          </nav>
+          <a class="footer__phone" href="tel:998991072080">+998(99)
+            107-20-80<img src="./images/icon-phone.png" alt="Телефон"></a>
+          <a href="#form" class="footer__button">
+            Заказать звонок
+          </a>
+          <a class="tothetop" href="#header">
+            <img src="images/arrow.png">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
