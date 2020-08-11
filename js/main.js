@@ -160,6 +160,7 @@ $(function () {
   });
 });
 (function(){
+
   var rol = document.querySelector('.rol');
   var innerItem = document.querySelectorAll('.auto__inner-item');
   innerItem.forEach((item) =>{
@@ -168,4 +169,29 @@ $(function () {
     })
   })
 
+})();
+(function(){
+  var autoCalculator = document.querySelector('#calculator');
+  var autoCalculatorForm = document.querySelectorAll('.advantages__inner-form .input__line option');
+  var selectedAuto = document.querySelector('#select')
+  var autoCalculatorView = document.querySelector('.advantages__inner-view img');
+  console.log(autoCalculatorView)
+  console.log(selectedAuto.value)
+  selectedAuto.addEventListener('change', () => {
+    console.log(selectedAuto.value)
+    if(selectedAuto.value == 1){
+      autoCalculatorView.src = './images/malibu.jpg'
+    } else if(selectedAuto.value == 2){
+      autoCalculatorView.src = './images/lacetti.jpg'
+    } else if(selectedAuto.value == 3){
+      autoCalculatorView.src = './images/nexia.jpg'
+    } else if(selectedAuto.value == 4){
+      autoCalculatorView.src = './images/Cobalt.jpg'
+    } else if(selectedAuto.value == 5){
+      autoCalculatorView.src = './images/spark.jpg'
+    }
+  })
+
+
+  
 })();
