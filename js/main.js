@@ -189,22 +189,28 @@ $(function () {
   }
     )
 
+    var car = {
+      first: '100000 сум',
+      second: '50000 сум',
+      three: '800000 сум',
+      four: '700000 сум',
+      five: '135000 сум'
+    }
+
   
 function calculate(summ){
   firstpay.textContent = summ.replace(/[^\d;]/g, '') * 6.5 / 100 + " сум";
   montsPaysumm = (((summ.replace(/[^\d;]/g, '') - 
   summ.replace(/[^\d;]/g, '') * 6.5 / 100) / creditTerm) + '').split('.')
 
-  console.log(montsPaysumm[0])
- console.log(montsPaysumm)
   montsPay.textContent = montsPaysumm[0] + ' сум'
 
 }
 calculate('100000 сум')
 
-  selectedAuto.addEventListener('click', () => {
+  selectedAuto.addEventListener('change', () => {
        if(selectedAuto.value == 1){
-       summ.textContent = '100000 сум'
+       summ.textContent = car.first
         calculate(summ.textContent)
 
      setOpacity(autoCalculatorView)  
@@ -222,19 +228,19 @@ calculate('100000 сум')
 
     } else if(selectedAuto.value == 3){
 
-      summ.textContent = '80000 сум'
+      summ.textContent = car.three
       calculate(summ.textContent)
       autoCalculatorView.src = './images/nexia.jpg'
       setOpacity(autoCalculatorView)
     } else if(selectedAuto.value == 4){
 
-      summ.textContent = '70000 сум'
+      summ.textContent = car.four
       calculate(summ.textContent)
 
       autoCalculatorView.src = './images/Cobalt.jpg'
       setOpacity(autoCalculatorView)
     } else if(selectedAuto.value == 5){
-      summ.textContent = '35000 сум'
+      summ.textContent = car.five
       calculate(summ.textContent)
 
       autoCalculatorView.src = './images/spark.jpg'
