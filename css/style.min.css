@@ -257,6 +257,9 @@ body {
 .header__inner-title div{
   display: inline;
 }
+.form__wrapper{
+    margin-top: 100px;
+}
 @media (max-width: 426px){
     .header__inner-title span {
         background-color: transparent;
