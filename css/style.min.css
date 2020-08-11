@@ -388,12 +388,31 @@ body {
 	margin-bottom: 62px
 }
 .auto__inner-footer img{
+    position: relative;
     text-align: center;
     max-width: 100%;
     margin-top: 62px;
 }
+.auto__inner{
+    position: relative;
+}
+.auto__inner:after{
+    position: absolute;
+    content: "";
+    width: 427px;
+height: 818px;
+background-image: url(../images/block.png);
+background-repeat: no-repeat;
+right: -220px;
+z-index: 0;
+top: 0px;
+}
+.auto__inner-item{
+    z-index: 5;
+}
 .auto__inner-footer span{
     display: block;
+    position: relative;
     text-align: center;
     font-family: Roboto;
 font-style: normal;
@@ -407,6 +426,7 @@ color: #000000;
 margin-top: 28px;
 margin-bottom: 68px;
 }
+
 .auto__inner-item,
 .auto__inner-slider-item {
 	position: relative;
