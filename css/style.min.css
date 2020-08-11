@@ -164,10 +164,13 @@ body {
 }
 
 .header__wrapper {
-	height: auto;
+    height: auto;
+  
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover
+    background-size: cover;
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
 }
 
 .header__top-inner {
@@ -396,16 +399,19 @@ body {
 .auto__inner{
     position: relative;
 }
-.auto__inner:after{
+#hiw{
+    position: relative;
+}
+#hiw:after{
     position: absolute;
     content: "";
     width: 427px;
 height: 818px;
 background-image: url(../images/block.png);
 background-repeat: no-repeat;
-right: -220px;
+right: 0px;
 z-index: 0;
-top: 0px;
+top: 50px;
 }
 .auto__inner-item{
     z-index: 5;
@@ -843,14 +849,16 @@ select {
 	position: absolute;
 	text-align: center;
 	width: 356px;
-	font-size: 14px;
+    font-size: 14px;
+    font-weight: 400;
 	z-index: 2;
 	line-height: 16px;
 	color: #838383;
 	background: #f2f3ee;
 	border-radius: 5px;
 	bottom: -140px;
-	padding: 20px 50px 20px
+    padding: 20px 50px 20px;
+    
 }
 
 .edge__triangle,
