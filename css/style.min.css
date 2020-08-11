@@ -387,7 +387,26 @@ body {
 	justify-content: space-between;
 	margin-bottom: 62px
 }
-
+.auto__inner-footer img{
+    text-align: center;
+    max-width: 100%;
+    margin-top: 62px;
+}
+.auto__inner-footer span{
+    display: block;
+    text-align: center;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+max-width: 777px;
+margin: 0 auto;
+color: #000000;
+margin-top: 28px;
+margin-bottom: 68px;
+}
 .auto__inner-item,
 .auto__inner-slider-item {
 	position: relative;
