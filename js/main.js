@@ -180,17 +180,33 @@ $(function () {
   selectedAuto.addEventListener('change', () => {
     console.log(selectedAuto.value)
     if(selectedAuto.value == 1){
+     setOpacity(autoCalculatorView)  
       autoCalculatorView.src = './images/malibu.jpg'
     } else if(selectedAuto.value == 2){
+                 
       autoCalculatorView.src = './images/lacetti.jpg'
+      setOpacity(autoCalculatorView)
     } else if(selectedAuto.value == 3){
       autoCalculatorView.src = './images/nexia.jpg'
+      setOpacity(autoCalculatorView)
     } else if(selectedAuto.value == 4){
       autoCalculatorView.src = './images/Cobalt.jpg'
+      setOpacity(autoCalculatorView)
     } else if(selectedAuto.value == 5){
       autoCalculatorView.src = './images/spark.jpg'
+      setOpacity(autoCalculatorView)
     }
   })
+  function setOpacity(el) {
+    autoCalculatorView.style.opacity = 0;
+    var op = 0;
+    while (op <= 1) {
+        (function(_op) {
+            setTimeout(function() { el.style.opacity = _op; }, 60 + op * 600);
+        })(op);
+        op += 0.1;
+    }
+}
 
 
   

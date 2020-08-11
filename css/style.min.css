@@ -465,6 +465,7 @@ margin-bottom: 68px;
 .auto__inner-footer__roller{
     position: relative;
 }
+
 @media (max-width: 1919px){
 	.auto__inner-footer__roller{
 		display: none;
