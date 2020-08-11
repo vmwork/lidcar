@@ -184,23 +184,27 @@ $(function () {
   document.addEventListener('click', () => {
     var jsInputTime = document.querySelector('.irs-single');
     creditTerm = jsInputTime.textContent;
-    // console.log(creditTerm)
+    calculate(summ.textContent)
     return creditTerm
   }
     )
 
   
 function calculate(summ){
-  firstpay.textContent = summ.replace(/[^\d;]/g, '') * 6.5 / 100 + " сум"
-  montsPay.textContent = (summ.replace(/[^\d;]/g, '') - 
-  summ.replace(/[^\d;]/g, '') * 6.5 / 100) / creditTerm  + " сум"
+  firstpay.textContent = summ.replace(/[^\d;]/g, '') * 6.5 / 100 + " сум";
+  montsPaysumm = (((summ.replace(/[^\d;]/g, '') - 
+  summ.replace(/[^\d;]/g, '') * 6.5 / 100) / creditTerm) + '').split('.')
+
+  console.log(montsPaysumm[0])
+ console.log(montsPaysumm)
+  montsPay.textContent = montsPaysumm[0] + ' сум'
+
 }
 calculate('100000 сум')
 
-  selectedAuto.addEventListener('change', () => {
+  selectedAuto.addEventListener('click', () => {
        if(selectedAuto.value == 1){
-
-        summ.textContent = '100000 сум'
+       summ.textContent = '100000 сум'
         calculate(summ.textContent)
 
      setOpacity(autoCalculatorView)  
