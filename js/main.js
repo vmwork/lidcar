@@ -156,22 +156,29 @@ $(function () {
 
 
   innerItem.forEach((item, i) =>{
-    item.addEventListener('mouseover', () =>{
+    item.addEventListener('click', () =>{
+      for (var j = 0; j <= innerItem.length -1; j++){
+        innerItem[j].firstElementChild.src = innerItemSrc[j];
+        innerItem[j].firstElementChild.style.backgroundColor = '#fe323d';
+        
+            }
     rol.style.left = (item.getBoundingClientRect().left - (screen.width - 1670)/2 ) +'px';
     for (var j = 0; j <= i; j++){
     innerItem[j].firstElementChild.src = './images/ok.png';
     innerItem[j].firstElementChild.style.backgroundColor = '#fff';
+   
         }
     })
   })
-  innerItem.forEach((item, i) =>{
-    item.addEventListener('mouseout', () =>{
-    for (var j = 0; j <= innerItem.length -1; j++){
-    innerItem[j].firstElementChild.src = innerItemSrc[j];
-    innerItem[j].firstElementChild.style.backgroundColor = '#fe323d';
-        }
-    })
-  })
+  // innerItem.forEach((item, i) =>{
+  //   item.addEventListener('mouseout', () =>{
+  //   for (var j = 0; j <= innerItem.length -1; j++){
+  //   innerItem[j].firstElementChild.src = innerItemSrc[j];
+  //   innerItem[j].firstElementChild.style.backgroundColor = '#fe323d';
+    
+  //       }
+  //   })
+  // })
 
 })();
 (function(){
