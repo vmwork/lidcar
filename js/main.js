@@ -74,27 +74,19 @@ $(function () {
     });
   });
 
-  const ajaxSend = (formData) => {
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    })
-      .then((response) => alert("Сообщение отправлено"))
-      .catch((error) => console.error(error));
-  };
+ 
 
-  const forms = document.querySelector("form");
-  // for (let i = 0; i < forms.length; i++) {
-  //   forms[i].addEventListener("submit", function (e) {
-  //     e.preventDefault();
+  // const ajaxSend = (formData) => {
+  //   fetch("https://jsonplaceholder.typicode.com/posts", {
+  //     method: "POST",
+  //     body: JSON.stringify(formData),
+  //   })
+  //     .then((response) => alert("Сообщение отправлено"))
+  //     .catch((error) => console.error(error));
+  // };
 
-  //     let formData = new FormData(this);
-  //     formData = Object.fromEntries(formData);
-
-  //     ajaxSend(formData);
-  //     this.reset();
-  //   });
-  // }
+  // const forms = document.querySelector("form");
+ 
 
   document.forms["form-contact"].addEventListener("submit", (e) => {
     e.preventDefault();
@@ -122,6 +114,7 @@ $(function () {
         },
         body: JSON.stringify(data), // body data type must match "Content-Type" header
       });
+      console.log(JSON.stringify(data))
       return await response.json(); // parses JSON response into native JavaScript objects
     }
 
@@ -131,7 +124,7 @@ $(function () {
       });
     };
 
-    postData("https://jsonplaceholder.typicode.com/posts", { contact })
+    postData("../post-email.php", { contact })
       .then(() => {
         formContactError.innerHTML = message.success;
         setTimeout(() => {
@@ -148,24 +141,35 @@ $(function () {
         clearInputs();
       });
 
-    // fetch().then(() => {
-    //   formContactError.innerHTML = "Te12312st";
-
-    // }).catch(() => {
-    //   formContactError.innerHTML = "Te12312st";
-
-    // })
-
-    // console.log(data);
+    
   });
 });
 (function(){
-
   var rol = document.querySelector('.rol');
   var innerItem = document.querySelectorAll('.auto__inner-item');
-  innerItem.forEach((item) =>{
+  var innerItemSrc = [];
+  for (var i = 0; i < innerItem.length; i++){
+    src = innerItem[i].firstElementChild.src;
+    innerItemSrc.push(src)
+  }
+  console.log(innerItemSrc)
+
+
+  innerItem.forEach((item, i) =>{
     item.addEventListener('mouseover', () =>{
-        rol.style.left = (item.getBoundingClientRect().left - 150) +'px';
+    rol.style.left = (item.getBoundingClientRect().left - (screen.width - 1670)/2 ) +'px';
+    for (var j = 0; j <= i; j++){
+    innerItem[j].firstElementChild.src = './images/ok.png';
+    innerItem[j].firstElementChild.style.backgroundColor = '#fff';
+        }
+    })
+  })
+  innerItem.forEach((item, i) =>{
+    item.addEventListener('mouseout', () =>{
+    for (var j = 0; j <= innerItem.length -1; j++){
+    innerItem[j].firstElementChild.src = innerItemSrc[j];
+    innerItem[j].firstElementChild.style.backgroundColor = '#fe323d';
+        }
     })
   })
 
