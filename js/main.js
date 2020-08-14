@@ -152,7 +152,7 @@ $(function () {
     src = innerItem[i].firstElementChild.src;
     innerItemSrc.push(src)
   }
-  console.log(innerItemSrc)
+
 
 
   innerItem.forEach((item, i) =>{
